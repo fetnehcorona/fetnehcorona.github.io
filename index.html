@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="preconnect" href="//fdn.fontcdn.ir">
+<link rel="preconnect" href="//v1.fontapi.ir">
+<link href="https://v1.fontapi.ir/css/Mitra" rel="stylesheet">
+<link href="https://v1.fontapi.ir/css/Titr" rel="stylesheet">
+
+<style>
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Titr", sans-serif;
+    font-size: 1.2em;
+  }
+
+  html,
+  body {
+    font-family: "Mitra", sans-serif;
+    font-size: 1.3em
+  }
+
+  .w3-sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 43px;
+    bottom: 0;
+    height: inherit;
+  }
+
+  #sidebar {
+    display: none !important;
+  }
+
+  .w3-main {
+    direction: rtl;
+  }
+
+  .caption {
+    color: gray;
+    font-size: 1rem;
+    font-family: 'Mitra';
+    display: block;
+    text-align: center;
+  }
+
+  .w3-bar .w3-bar-item {
+    float: right;
+  }
+</style>
+
+<style>
+  .h_iframe-aparat_embed_frame {
+    position: relative;
+  }
+
+  .h_iframe-aparat_embed_frame .ratio {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .h_iframe-aparat_embed_frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+
+<style>
+  blockquote {
+    width: 80%;
+    margin: 50px auto;
+    font-style: italic;
+    color: #555555;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #78C0A8;
+    line-height: 1.6;
+    position: relative;
+    background: #EDEDED;
+  }
+
+  blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #78C0A8;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+  }
+
+  blockquote::after {
+    content: '';
+  }
+
+  blockquote span {
+    display: block;
+    color: #333333;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 1em;
+  }
+
+  hr.rounded {
+    border-top: 8px solid #bbb;
+    border-radius: 5px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+</style>
+
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-top w3-right-align w3-large w3-light-grey w3-card-4">
+      <!-- <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-small w3-hide-medium w3-hover-white w3-large w3-theme-l1"
+        href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a> -->
+      <a href="#" class="w3-bar-item w3-button w3-theme-l2">فتنه کرونا</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">منشا</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">درمان</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">رسانه</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">Clients</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">Partners</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">Clients</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">Partners</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">Clients</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">Partners</a>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <nav id="sidebar" class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <!-- <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div> -->
+
+  <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+  <!-- <div class="w3-main" style="margin-left:250px"> -->
+  <div class="w3-main">
+    <div class="w3-row w3-padding-32 w3-center ">
+      <!-- <h1>اساس کار ما تبیین است.</h1> -->
+      <!-- <img class="w3-round" style="width: 100%;" src="tabiin.jpg" alt=""> -->
+    </div>
+
+    <div class="w3-padding-64 w3-center full-height">
+      <h1>کرونا، فتنه خاموش</h1>
+    </div>
+    <article class="w3-container">
+      <hr class="rounded">
+
+      <h1 class="w3-row w3-padding-32 w3-center">۱) منشاء پیدایش و شیوع کرونا</h1>
+      <div class="w3-row">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">اهمیت شناخت منشاء کرونا</h1>
+          <p>
+            بیایید به عقب برگردیم. جنگ ایران و رژیم بعث عراق. جالب است بدانید که سلاح‌های شیمیایی را آلمان برای صدام
+            فراهم می‌کرد. از آن جالب‌تر اینکه آلمان کشوری بود که به رایگان بیماران شیمیایی ایرانی را درمان می‌کرد!
+            هدفشان چه می‌تواند باشد؟ آیا کسی برای سلامتی از ضربه دشمن به آغوش او پناه می‌برد؟ حقیقت درمان رایگان این است
+            که آلمان می‌خواست تاثیرات سلاح‌های خود را بررسی و تحلیل کند تا بتواند سلاح‌های جدیدتر که برای ایرانی‌ها
+            مرگبارتر باشند را تولید کند.
+          </p>
+          <p>
+            شناخت مبدا شیوع کرونا از همین جهت مهم است. چونکه اگر ما پروتکل‌های درمانی و بهداشتی را از کسانی بگیریم که
+            خودشان تولید کننده ویروس هستند واضح است که چه بلایی سرمان خواهد آمد. چه بسا پروتکل‌های بهداشتی و درمانی خودش
+            وسیله‌ای باشد که آمار تلفات را بیشتر کند، سیستم‌ ایمنی را تضعیف کند و مبارزه با بیماری را فرسایشی و سخت کند.
+          </p>
+          <p>
+            در مورد پیدایش و تولیدکننده بیماری کرونا یک مستند بسیار مناسب تولید شده است با نام «نمایش کرونا».
+            در این
+            مستند اسناد مختلفی از تولید آزمایشگاهی ویروس نوترکیب کرونا تا اظهارنظرهای مقامات آمریکایی در مورد
+            حتمی بودن
+            وقوع همه‌گیری را گردآوری کرده است. این مستند ۲۱ دقیقه ای در تحلیل‌های شما کمک می‌کند.
+
+          </p>
+
+        </div>
+        <div class="w3-third w3-container">
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/IpCuY/vt/frame"
+                title="واقعیت کشور آلمان در درمان مجروحان شیمیایی" allowFullScreen="true" webkitallowfullscreen="true"
+                mozallowfullscreen="true"></iframe></div>
+            <span class="caption">آلمان در دفاع مقدس: هم قاتل هم ناجی ایران!</span>
+          </p>
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/sexQf/vt/frame"
+                title="مستند ارتباط بیل گیتس با سازندگان ویروس کرونا" allowFullScreen="true"
+                webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+            <span class="caption">مستند نمایش کرونا - کرونا ویروس تولیدشده</span>
+          </p>
+
+        </div>
+      </div>
+      <!-- اهمیت شناخت منشاء کرونا -->
+
+      <!-- جنگ بیولوژیک چیست؟ -->
+      <div class="w3-row">
+        <hr class="rounded">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">جنگ بیولوژیک چیست؟</h1>
+
+          <p>
+            رهبر معظم انقلاب در پیامشان خطاب به سرلشگر باقری احتمال جنگ بیولوژیک بودن کرونا را عنوان کرده اند. در این
+            بخش می‌خواهیم با جنگ بیولوژیک بیشتر آشنا شویم..
+          </p>
+          <blockquote class="otro-blockquote">
+            این اقدام با توجه به قرائنی که احتمال «حمله‌ی بیولوژیکی» بودن این رویداد را مطرح کرده می‌تواند جنبه‌ی رزمایش
+            دفاع بیولوژیک نیز داشته و بر اقتدار و توان ملّی بیفزاید.
+            <span>رهبر معظم انقلاب ۲۲ اسفند ۱۳۹۸ </span>
+          </blockquote>
+          <p>
+            جنگ بیولوژیک عنوان جدیدی به نظر می‌آید اما باید بدانیم که در طول تاریخ بارها و بارها رخ داده است. حملات
+            بیولوژیک می‌تواند برای ضربه زدن یا ترور کردن یک فرد خاص اتفاق بیوفتد یا برای به عنوان یک ابزار کشتارجمعی
+            مورد استفاده قرار بگیرد. نمونه افرادی که هدف ترور بیولوژیک قرار گرفته اند مانند شهید کاظمی آشتیانی، شهید
+            فرج‌الله سلحشور و استاد نادرطالب‌زاده هستند. خوراندن سم یکی از اقسام ترور بیولوژیک است. بنابراین بعضی از
+            امامان معصوم مثل امام حسن مجتبی(ع) قربانی ترور بیولوژیک هستند.
+          </p>
+          <p>
+            قسم دوم جنگ بیولوژیک همانطور که اشاره کردم، استفاده از عوامل زیستی به عنوان یک سلاح کشتار جمعی است. تولید
+            ویروس‌های آزمایشگاهی و انتشار آن در جامعه دشمن از این قسم است. مثلا یمن یکی از قربانیان جنگ بیولوژیک است.
+            بمب‌های شیمیایی که صدام علیه ایرانیان استفاده کرد یک حمله بیولوژیکی است. یکی از لوازم تولید ویروس‌های قوی‌تر
+            شناخت بیشتر از نژاد دشمن مورد نظر است. صحبت‌های پروفسور کرمی در مورد جمع‌آوری اطلاعات ژنوم ایرانیان را
+            می‌بینید که می‌گوید با استفاده از اطلاعاتشان می‌توانند سلاح‌های نژادی تولید کنند.
+          </p>
+
+        </div>
+        <div class="w3-third w3-container">
+          <p>
+            <img style="width: 100%;" src="shahid_teror.jpg" alt="شهدای ترور بیولوژیک">
+            <span class="caption">قربانیان ترور بیولوژیک</span>
+          </p>
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/89hz3/vt/frame"
+                title="جنگ بیولوژیک آمریکا در یمن" allowFullScreen="true" webkitallowfullscreen="true"
+                mozallowfullscreen="true"></iframe></div>
+            <span class="caption">نمونه جنگ بیولوژیک: انتشار ویروس ابولا در یمن</span>
+          </p>
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/SwU2n/vt/frame" title="رادار انقلابی"
+                allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+            <span class="caption">پروفسور کرمی: تحقیق روی ژن ایرانی برای تولید سلاح نژادی</span>
+          </p>
+        </div>
+      </div>
+      <!-- جنگ بیولوژیک چیست؟ -->
+      <!-- آمار ساختگی ابتلاء -->
+      <div class="w3-row">
+        <hr class="rounded">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">آمار ساختگی ابتلاء</h1>
+          <p>
+            بسیاری از متخصصان در سراسر جهان علیه ماجرای کرونا اعتراض کرده اند. یکی از ادعاهایی که متخصصین می‌گویند این
+            است که ویروس کرونا چیزی بیشتر از یک آنفولانزای معمولی نیست! اما چرا این ویروس تا به این حد معروف شده است؟
+            دکتر الکه و جمع کثیری از پزشکان و پرستاران مخالف واکسن عقیده دارند که اساسا ویروس کرونا بیماری ای نیست که در
+            سطح یک همه‌گیری باشد و بیان می‌کند که همه‌گیری ساخته‌ی رسانه‌هاست و واقعیت ندارد. یکی از عللی که رسانه‌ها
+            توانسته اند کرونا را اینقدر بزرگ جلوه بدهند آمار بالای ابتلاست که با استفاده از تست PCR سنجیده می‌شود.
+          </p>
+          <p>
+            تست PCR از نظر علمی برای تشخیص صرفا کرونا نیست. بلکه سرماخوردگی معمولی و انواع مختلف آنفولانزا را هم مثبت
+            اعلام می‌کند. دومین نکته در مورد تست PCR اینکه این تست امروز به روش علمی انجام نمی‌گیرد و خود همین عاملی شده
+            است که آمار مثبت کاذب بسیار بیشتر شود. در دو تحقیق جداگانه وقتی تست PCR را به روش علمی انجام دادند تعداد
+            مثبت‌ها ۳۷٪ و ۹۰٪ کاهش پیدا کرد. نکته سوم در مورد آمار ابتلا کرونا وجود «مغالطه نرخ پایه» است. اگر با فرمول
+            احتمال شرطی آشنا باشید می‌تواند این مغالطه را اثبات کنید. مغلطه نرخ پایه می‌گوید وقتی تعداد افراد مبتلا به
+            بیماری نسبت به کل جمعیت کم باشد، نتایج مثبت کاذب بیشتری خواهیم داشت. یعنی اگر تست شما مثبت باشد با احتمال
+            ۶۶٪ تا ۵۰٪ شما کرونا ندارید! ۶۶٪ را یکی از وبلاگ‌نویسان ایرانی سرانگشتی محاسبه کرده و ۵۰٪ را از مصاحبه یک
+            متخصص انگلیسی زبان شنیده ام. ویدیو روبرو موضوع تست PCR را بهتر توضیح می‌دهد.
+          </p>
+          <blockquote>
+            و مطلب آخر هم این است که مسئله یک مسئله‌ی گذرا است، یک چیز فوق‌العاده نیست؛ از این حوادث در کشور پیش می‌آید.
+            البتّه من نمیخواهم مسئله را خیلی کوچک بگیرم امّا<b> خیلی هم بزرگش نکنیم مسئله را.</b> یک قضیّه‌ای است پیش
+            آمده، یک
+            مدّتی است -مدّتی که ان‌شاءالله خیلی طولانی نخواهد بود- این برای کشور وجود خواهد داشت، بعد هم رخت برمیبندد و
+            میرود.
+            <span>رهبر معظم انقلاب ۱۳۹۸/۱۲/۱۳</span>
+          </blockquote>
+        </div>
+        <div class="w3-third w3-container">
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/BuWOl/vt/frame"
+                title="دکتر الکه : کرونا همان آنفولانزاست ، کرونا یک دروغ است" allowFullScreen="true"
+                webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+            <span class="caption">دکتر الکه: همه‌گیری ساخته‌ی تست PCR است</span>
+          </p>
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/KofQq/vt/frame"
+                title="در مورد استاندارد طلایی تشخیص کووید 19 چه میدانید؟ تست PCR چقدر قابل اعتماد است؟"
+                allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+            <span class="caption">تست PCR عامل آمارسازی ابتلا به کرونا</span>
+          </p>
+          <p>
+            <a href="https://web.archive.org/web/20211011150940/https://virgool.io/@alifathi/%D8%AA%D8%B3%D8%AA-PCR-%D8%B4%D9%85%D8%A7-%D9%85%D8%AB%D8%A8%D8%AA-%D8%B4%D8%AF%D8%9F-%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9%21-%D8%A8%D9%87-%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84-%DB%B6%DB%B6-%D8%AF%D8%B1%D8%B5%D8%AF-%DA%A9%D8%B1%D9%88%D9%86%D8%A7-%D9%86%D8%AF%D8%A7%D8%B1%DB%8C%D8%AF%21-zztkpv4du8d7"
+              target="_blank">
+              <img style="width: 100%;" src="pcr.png" alt="تست PCR اشتباه است">
+            </a>
+            <span class="caption"><a
+                href="https://web.archive.org/web/20211011150940/https://virgool.io/@alifathi/%D8%AA%D8%B3%D8%AA-PCR-%D8%B4%D9%85%D8%A7-%D9%85%D8%AB%D8%A8%D8%AA-%D8%B4%D8%AF%D8%9F-%D8%AA%D8%A8%D8%B1%DB%8C%DA%A9%21-%D8%A8%D9%87-%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84-%DB%B6%DB%B6-%D8%AF%D8%B1%D8%B5%D8%AF-%DA%A9%D8%B1%D9%88%D9%86%D8%A7-%D9%86%D8%AF%D8%A7%D8%B1%DB%8C%D8%AF%21-zztkpv4du8d7"
+                target="_blank">معرفی مغلطه
+                نرخ پایه</a>
+              در یک وبلاگ فارسی</span>
+          </p>
+        </div>
+      </div>
+      <!-- آمار ساختگی ابتلاء -->
+
+      <div class="w3-row">
+        <hr class="rounded">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">علت فوت بیماران کرونایی</h1>
+
+          <p>
+            در قسمت قبل بررسی کردیم که چگونه تست کرونا آمار ابتلا را بطور دروغین بالا می‌برد. اما سوالی که باقی می‌ماند این است که آمار مرگ و میر کرونا چرا بالاست؟ اگر واقعا آمار ابتلا ساختگی و اغراق آمیز است بالاخره فوتی‌ها چرا بالاست؟ سه علت برای بالابودن آمار مرگ و میر کرونا می‌توان ارائه کرد. اولا تاثیر ترس بر تضعیف سیستم ایمنی بدن و دوما چنددارویی سوما شمارش فوتی با علل دیگر به حساب کرونا. در مورد دلیل اول بیشتر توضیح می‌دهم. در ویدیو مقابل توضیح علمی تاثیر ترس بر تضعیف سیستم ایمنی را مشاهده کنید تا با جزئیات آن آشنا شوید.
+          </p>
+          <p>
+            مورد دوم آمار بالای مرگ و میر کرونا متاسفانه چنددارویی است. این عبارت را دکتر حریرچی بیان کرده است که در کلیپ روبرو می‌توانید ببینید. چند دارویی یا پلی فارمسی به این معنی است که داروها و درمان‌های متعدد و بعضا متناقض را به بیمار می‌دهند و خود عوارض این داروهاست که در نهایت سبب مرگ می‌شود. خانم دکتر زهرا شیخی نماینده مجلس می‌گوید ایران تنها ۲٪ بیماران کرونایی جهان را دارد اما ۲۷٪ کارآزمایی بالینی داروهای کرونا را انجام داده است. معنی این حرف چیست؟ یعنی داروهایی که تاثیرشان معلوم نیست را روی مردم ایران بصورت گسترده آزمایش می‌کنند و نتایج آن را به سازمان بهداشت جهانی اعلام می‌کنند. خانم دکتر مینو محرز هم به بی اثر بودن این داروها اعتراف می‌کند. در مورد داروهای مورد استفاده در بخش مربوط به مافیا نظام سلامت بیشتر توضیح خواهم داد. این داروهای بی‌خاصیت هم اکنون هم بصورت گسترده استفاده می‌شوند.
+          </p>
+          <p>
+            علت سوم آمار بالای فوتی های کرونایی این است که معیار ثبت فوتی به عنوان فوت کرونایی فقط این است که فرد هنگام مرگ PCR مثبت داشته باشد. بالاتر توضیح دادیم که اساسا نتایج این تست اغلب واقعی نیست. دوما اینکه مبتلا بودن به کرونا با مرگ در اثر کرونا متفاوت است. ممکن است فردی در اثر فلان بیماری قلبی فوت کند و همزمان تست کرونای او مثبت باشد. کرونا مثبت شدن به معنی مرگ در اثر کرونا نیست. بگذریم از گزارش‌های مختلفی که می‌گویند اصرار خاصی در ثبت فوتی‌ها به عنوان فوتی کرونایی در ایران و در جهان وجود دارد.
+          </p>
+        </div>
+        <div class="w3-third w3-container">
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/4YpqD/vt/frame"
+                title="اثرات مخرب ترس و استرس بر سیستم ایمنی و اهمیت آن در بیماری کرونا" allowFullScreen="true"
+                webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+            <span class="caption">ترس عامل تضعیف ایمنی و در نتیجه افزایش تلفات کرونا</span>
+          </p>
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/XPDjU/vt/frame" title="پلی فارماسی چیست"
+                allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+                <span class="caption">پلی فارمسی یکی از علل مرگ بیماران کرونایی</span>
+          </p>
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/5LaRm/vt/frame" title="اعتراف مینو محرز"
+                allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+                <span class="caption">داروهای کارآزمایی‌های بالینی همگی بی‌خاصیت هستند</span>
+          </p>
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/qm3fR/vt/frame"
+                title="کرونا هراسی با آمارسازی دروغ" allowFullScreen="true" webkitallowfullscreen="true"
+                mozallowfullscreen="true"></iframe></div>
+                <span class="caption">گزارش‌هایی از ثبت فوتی‌های مختلف به عنوان فوتی کرونا</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-row">
+        <hr class="rounded">
+        <div class="w3-twothird w3-container">
+          <p>
+            در مورد پیدایش و تولیدکننده بیماری کرونا یک مستند بسیار مناسب تولید شده است با نام «نمایش کرونا». در
+            این
+            مستند اسناد مختلفی از تولید آزمایشگاهی ویروس نوترکیب کرونا تا اظهارنظرهای مقامات آمریکایی در مورد حتمی
+            بودن
+            وقوع همه‌گیری را گردآوری کرده است. این مستند ۲۱ دقیقه ای در تحلیل‌های شما کمک می‌کند.
+
+          </p>
+        </div>
+        <div class="w3-third w3-container">
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/sexQf/vt/frame"
+                title="مستند ارتباط بیل گیتس با سازندگان ویروس کرونا" allowFullScreen="true"
+                webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+            <span class="caption">مستند نمایش کرونا - کرونا ویروس تولیدشده</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-row">
+        <hr class="rounded">
+        <div class="w3-twothird w3-container">
+          <p>
+            در مورد پیدایش و تولیدکننده بیماری کرونا یک مستند بسیار مناسب تولید شده است با نام «نمایش
+            کرونا». در این
+            مستند اسناد مختلفی از تولید آزمایشگاهی ویروس نوترکیب کرونا تا اظهارنظرهای مقامات آمریکایی در
+            مورد حتمی بودن
+            وقوع همه‌گیری را گردآوری کرده است. این مستند ۲۱ دقیقه ای در تحلیل‌های شما کمک می‌کند.
+
+          </p>
+        </div>
+        <div class="w3-third w3-container">
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/sexQf/vt/frame"
+                title="مستند ارتباط بیل گیتس با سازندگان ویروس کرونا" allowFullScreen="true"
+                webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+            <span class="caption">مستند نمایش کرونا - کرونا ویروس تولیدشده</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-row">
+        <hr class="rounded">
+        <div class="w3-twothird w3-container">
+          <p>
+            در مورد پیدایش و تولیدکننده بیماری کرونا یک مستند بسیار مناسب تولید شده است با نام «نمایش
+            کرونا». در این
+            مستند اسناد مختلفی از تولید آزمایشگاهی ویروس نوترکیب کرونا تا اظهارنظرهای مقامات آمریکایی
+            در مورد حتمی بودن
+            وقوع همه‌گیری را گردآوری کرده است. این مستند ۲۱ دقیقه ای در تحلیل‌های شما کمک می‌کند.
+
+          </p>
+        </div>
+        <div class="w3-third w3-container">
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/sexQf/vt/frame"
+                title="مستند ارتباط بیل گیتس با سازندگان ویروس کرونا" allowFullScreen="true"
+                webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+            <span class="caption">مستند نمایش کرونا - کرونا ویروس تولیدشده</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-row">
+        <div class="w3-twothird w3-container">
+          <p>
+            در مورد پیدایش و تولیدکننده بیماری کرونا یک مستند بسیار مناسب تولید شده است با نام «نمایش کرونا». در این
+            مستند اسناد مختلفی از تولید آزمایشگاهی ویروس نوترکیب کرونا تا اظهارنظرهای مقامات آمریکایی در مورد حتمی بودن
+            وقوع همه‌گیری را گردآوری کرده است. این مستند ۲۱ دقیقه ای در تحلیل‌های شما کمک می‌کند.
+          </p>
+        </div>
+        <div class="w3-third w3-container">
+          <p>
+            <div class="h_iframe-aparat_embed_frame"><span style="display: block;padding-top: 57%"></span><iframe
+                src="https://www.aparat.com/video/video/embed/videohash/sexQf/vt/frame"
+                title="مستند ارتباط بیل گیتس با سازندگان ویروس کرونا" allowFullScreen="true"
+                webkitallowfullscreen="true" mozallowfullscreen="true"></iframe></div>
+            <span class="caption">مستند نمایش کرونا - کرونا ویروس تولیدشده</span>
+          </p>
+        </div>
+      </div>
+    </article>
+    <!-- end of container -->
+
+    <footer id="myFooter">
+      <div class="w3-container w3-padding-32">
+        <h4>سردار عزیزم شاهد باش که رهبرم را در فرمان جهاد تبیین تنها نگذاشتم</h4>
+      </div>
+
+      <div class="w3-container w3-theme-l1">
+        <p><a href="//fetnehcorona.github.io">کرونا، فتنه خاموش</a></p>
+      </div>
+    </footer>
+
+    <!-- END MAIN -->
+  </div>
+
+  <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+  </script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {},
+    Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"),
+      s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/61646934157d100a41abde46/1fho3ltu5';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+
+</html>
